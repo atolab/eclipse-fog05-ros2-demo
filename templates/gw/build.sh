@@ -27,9 +27,8 @@ lxc exec gw -- sh -c "yes | awall activate"
 lxc exec gw -- rc-update add iptables
 lxc exec gw -- rc-update add dnsmasq
 
-lxc restart gw
-# lxc stop gw
-# lxc publish gw --alias gwimg
-# lxc image export gwimg gw
-# lxc image delete gwimg
-# lxc delete gw
+lxc stop gw
+lxc publish gw --alias gwimg
+lxc image export gwimg gw
+lxc image delete gwimg
+lxc delete gw
