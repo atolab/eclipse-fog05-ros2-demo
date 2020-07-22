@@ -1,0 +1,1 @@
+{"config": {}, "description": "Default LXD profile", "devices": {"eth0": {"name": "eth0", "network": "lxdbr0", "type": "nic"}, "eth1": {"hwaddr": "be:ef:be:ef:00:00", "name": "eth1", "nictype": "bridged", "parent": "br0", "type": "nic"}, "root": {"path": "/", "pool": "default", "type": "disk"}}}

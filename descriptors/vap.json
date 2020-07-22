@@ -1,0 +1,52 @@
+{
+    "id": "virtual-ap",
+    "name": "virtual-access-point",
+    "computation_requirements": {
+        "cpu_arch": "x86_64",
+        "cpu_min_freq": 0,
+        "cpu_min_count": 1,
+        "ram_size_mb": 512.0,
+        "storage_size_gb": 1.0
+    },
+    "image": {
+        "uri": "file:///home/ubuntu/images/vap.tar.gz",
+        "checksum": "90eb9e018eb2755e0fd241a7f80c4f25a0f94000ed8c31ae639c4da6552ad1b0",
+        "format": "tar.gz"
+    },
+    "storage": [],
+    "hypervisor": "LXD",
+    "migration_kind": "COLD",
+    "interfaces": [
+        {
+            "name": "eth0",
+            "is_mgmt": false,
+            "if_type": "INTERNAL",
+            "cp_id": "vap-cp1",
+            "mac_address":"be:ef:be:ef:00:40",
+            "virtual_interface": {
+                "intf_type": "VIRTIO",
+                "vpci": "",
+                "bandwidth": 0
+            }
+        },
+        {
+            "name": "wlan1",
+            "is_mgmt": false,
+            "if_type": "EXTERNAL",
+            "virtual_interface": {
+                "intf_type": "PHYSICAL",
+                "vpci": "wlan1",
+                "bandwidth": 0
+            }
+        }
+    ],
+    "io_ports": [],
+    "connection_points": [
+        {
+            "id": "vap-cp1",
+            "name": "vap-internal-connection-point",
+            "vld_ref": "6cc2aa30-1dcf-4c93-a57e-433fd0bd498e"
+        }
+    ],
+    "depends_on": []
+}

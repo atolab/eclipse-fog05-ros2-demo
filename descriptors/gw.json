@@ -1,0 +1,52 @@
+{
+    "id": "gw",
+    "name": "gateway",
+    "computation_requirements": {
+        "cpu_arch": "aarch64",
+        "cpu_min_freq": 0,
+        "cpu_min_count": 1,
+        "ram_size_mb": 512.0,
+        "storage_size_gb": 2.0
+    },
+    "image": {
+        "uri": "file:///home/ubuntu/images/gw.tar.gz",
+        "checksum": "21fbf431e1b98e0554adf3407f0c3597dbeb9031fca29eb5e6f2357a7d92aeff",
+        "format": "tar.gz"
+    },
+    "storage": [],
+    "hypervisor": "LXD",
+    "migration_kind": "COLD",
+    "interfaces": [
+        {
+            "name": "eth0",
+            "is_mgmt": false,
+            "if_type": "INTERNAL",
+            "virtual_interface": {
+                "intf_type": "BRIDGED",
+                "vpci": "lxdbr0",
+                "bandwidth": 0
+            }
+        },
+        {
+            "name": "eth1",
+            "is_mgmt": false,
+            "if_type": "INTERNAL",
+            "mac_address":"be:ef:be:ef:00:00",
+            "cp_id": "gw-cp1",
+            "virtual_interface": {
+                "intf_type": "VIRTIO",
+                "vpci": "",
+                "bandwidth": 0
+            }
+        }
+    ],
+    "io_ports": [],
+    "connection_points": [
+        {
+            "id": "gw-cp1",
+            "name": "gw-internal-connection-point",
+            "vld_ref": "6cc2aa30-1dcf-4c93-a57e-433fd0bd498e"
+        }
+    ],
+    "depends_on": []
+}
