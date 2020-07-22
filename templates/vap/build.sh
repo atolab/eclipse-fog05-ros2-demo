@@ -17,8 +17,8 @@ lxc exec ap -- apk upgrade
 lxc exec ap -- apk add hostapd bridge
 
 
-lxc file push ./templates/interfaces ap/etc/network/interfaces
-lxc file push ./templates/hostapd.conf ap/etc/hostapd/hostapd.conf
+lxc file push ./interfaces ap/etc/network/interfaces
+lxc file push ./hostapd.conf ap/etc/hostapd/hostapd.conf
 
 lxc exec ap -- rc-update add hostapd
 
