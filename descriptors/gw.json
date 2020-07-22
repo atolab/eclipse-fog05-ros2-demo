@@ -10,7 +10,7 @@
     },
     "image": {
         "uri": "file:///home/ubuntu/images/gw.tar.gz",
-        "checksum": "21fbf431e1b98e0554adf3407f0c3597dbeb9031fca29eb5e6f2357a7d92aeff",
+        "checksum": "1356bda713ce3009a0c5186b871c0146b30e9d2894fc4e4676f5e05d2a208ca8",
         "format": "tar.gz"
     },
     "storage": [],
