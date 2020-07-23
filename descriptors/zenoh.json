@@ -6,7 +6,7 @@
         "cpu_min_freq": 0,
         "cpu_min_count": 1,
         "ram_size_mb": 512.0,
-        "storage_size_gb": 20.0
+        "storage_size_gb": 2.0
     },
     "image": {
         "uri": "docker.io/fog05/zenoh:arm64",
