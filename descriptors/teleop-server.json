@@ -23,7 +23,7 @@
         "mac_address":"be:ef:be:ef:00:10",
         "cp_id": "server-cp1",
         "virtual_interface": {
-            "intf_type": "VIRTIO",
+            "intf_type": "BRIDGED",
             "vpci": "",
             "bandwidth": 0
         }
