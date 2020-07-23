@@ -67,7 +67,6 @@ def main(ip):
         inst_info = a.fdu.define(fdu_id)
         iid = inst_info.get_uuid()
         a.fdu.configure(iid)
-        time.sleep(1)
         if name == 'server':
             a.fdu.start(iid, "ZENOH=172.16.123.20")
         else:
