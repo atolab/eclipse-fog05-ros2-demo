@@ -2,14 +2,14 @@
     "id": "zenoh-router-storage",
     "name": "zenoh-router-storage",
     "computation_requirements": {
-        "cpu_arch": "aarch64",
+        "cpu_arch": "x86_64",
         "cpu_min_freq": 0,
         "cpu_min_count": 1,
         "ram_size_mb": 512.0,
         "storage_size_gb": 2.0
     },
     "image": {
-        "uri": "docker.io/fog05/zenoh:arm64",
+        "uri": "docker.io/fog05/zenoh:latest",
         "checksum": "",
         "format": ""
     },
