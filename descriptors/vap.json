@@ -2,7 +2,7 @@
     "id": "virtual-ap",
     "name": "virtual-access-point",
     "computation_requirements": {
-        "cpu_arch": "x86_64",
+        "cpu_arch": "aarch64",
         "cpu_min_freq": 0,
         "cpu_min_count": 1,
         "ram_size_mb": 512.0,
