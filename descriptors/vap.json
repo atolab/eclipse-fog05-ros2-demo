@@ -24,7 +24,7 @@
             "cp_id": "vap-cp1",
             "mac_address":"be:ef:be:ef:00:40",
             "virtual_interface": {
-                "intf_type": "BRIDGED",
+                "intf_type": "VIRTIO",
                 "vpci": "",
                 "bandwidth": 0
             }

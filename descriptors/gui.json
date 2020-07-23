@@ -23,7 +23,7 @@
         "mac_address":"be:ef:be:ef:00:20",
         "cp_id": "gui-cp1",
         "virtual_interface": {
-            "intf_type": "BRIDGED",
+            "intf_type": "VIRTIO",
             "vpci": "",
             "bandwidth": 0
         }

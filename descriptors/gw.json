@@ -34,7 +34,7 @@
             "mac_address":"be:ef:be:ef:00:00",
             "cp_id": "gw-cp1",
             "virtual_interface": {
-                "intf_type": "BRIDGED",
+                "intf_type": "VIRTIO",
                 "vpci": "",
                 "bandwidth": 0
             }
