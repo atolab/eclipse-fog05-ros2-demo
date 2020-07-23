@@ -12,9 +12,9 @@ DESC_FOLDER = './descriptors'
 descs = {
     'gw':'gw.json',
     'ap':'vap.json',
+    'zenoh':'zenoh.json',
     'server':'teleop-server.json',
     'gui':'gui.json',
-    'zenoh':'zenoh.json'
 }
 
 net_desc = ['vnet.json']
