@@ -9,12 +9,12 @@
         "storage_size_gb": 5.0
     },
     "image": {
-        "uri": "docker.io/gabrik91/teleop:latest",
-        "checksum": "",
-        "format": ""
+        "uri": "file:///home/ato/images/server.tar.gz",
+        "checksum": "5cac0e59f5840ab7d6557111411c32b557adb877656433395e69d3ac3385ba7c",
+        "format": "tar.gz"
     },
     "storage": [],
-    "hypervisor": "DOCKER",
+    "hypervisor": "LXD",
     "migration_kind": "COLD",
     "interfaces": [{
         "name": "eth0",

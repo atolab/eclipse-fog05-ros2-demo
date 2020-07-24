@@ -1,0 +1,17 @@
+[unit]
+Description = Robot Teleoperation server
+
+
+[Service]
+Type=simple
+PIDFile=/tmp/teleop.pid
+ExecStart = /usr/local/bin/teleop_server.py 172.16.123.20
+KillMode=process
+Restart=on-failure
+User=root
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=teleop
+[Install]
+WantedBy=multi-user.target
+Alias=teleop.service

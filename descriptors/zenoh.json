@@ -9,12 +9,12 @@
         "storage_size_gb": 2.0
     },
     "image": {
-        "uri": "docker.io/fog05/zenoh:latest",
-        "checksum": "",
-        "format": ""
+        "uri": "file:///home/ato/images/zenoh.tar.gz",
+        "checksum": "918c0369d3aefabc708b3743acdf9225973095cd43676f1ce1050a8015f45043",
+        "format": "tar.gz"
     },
     "storage": [],
-    "hypervisor": "DOCKER",
+    "hypervisor": "LXD",
     "migration_kind": "COLD",
     "interfaces": [{
         "name": "eth0",

@@ -9,12 +9,12 @@
         "storage_size_gb": 1.0
     },
     "image": {
-        "uri": "docker.io/gabrik91/robot-gui:latest",
-        "checksum": "",
-        "format": ""
+        "uri": "file:///home/ato/images/gui.tar.gz",
+        "checksum": "fa9a0e45b13a18bed954723f2bd33ca4b3ffd302b40cf46bbc3ff133dfedf10b",
+        "format": "tar.gz"
     },
     "storage": [],
-    "hypervisor": "DOCKER",
+    "hypervisor": "LXD",
     "migration_kind": "COLD",
     "interfaces": [{
         "name": "eth0",
