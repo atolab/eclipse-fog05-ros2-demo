@@ -5,7 +5,7 @@ Description = Robot Teleoperation server
 [Service]
 Type=simple
 PIDFile=/tmp/teleop.pid
-ExecStart = /usr/local/bin/teleop_server.py 172.16.123.20
+ExecStart = /usr/bin/python3 /usr/local/bin/teleop_server.py 172.16.123.20
 KillMode=process
 Restart=on-failure
 User=root
