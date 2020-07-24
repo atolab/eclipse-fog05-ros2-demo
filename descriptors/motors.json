@@ -1,0 +1,43 @@
+{
+    "id": "ros2-motor-control",
+    "name": "turtlebot3_bringup",
+    "computation_requirements": {
+        "cpu_arch": "aarch64",
+        "cpu_min_freq": 0,
+        "cpu_min_count": 1,
+        "ram_size_mb": 512.0,
+        "storage_size_gb": 2.0
+    },
+    "image": {
+        "uri": "file:///home/ubuntu/images/robot.tar.gz",
+        "checksum": "",
+        "format": "tar.gz"
+    },
+    "command":{
+        "binary":" robot.launch.py",
+        "args":[]
+    },
+    "storage": [],
+    "hypervisor": "ROS2",
+    "migration_kind": "COLD",
+    "interfaces": [{
+        "name": "eth0",
+        "is_mgmt": false,
+        "if_type": "INTERNAL",
+        "cp_id": "robot-motor-cp1",
+        "virtual_interface": {
+            "intf_type": "VIRTIO",
+            "vpci": "",
+            "bandwidth": 0
+        }
+    }],
+    "io_ports": [],
+    "connection_points": [
+        {
+            "id": "robot-motor-cp1",
+            "name": "robot-motor-internal-connection-point",
+            "vld_ref": "6cc2aa30-1dcf-4c93-a57e-433fd0bd498e"
+        }
+    ],
+    "depends_on": []
+}
