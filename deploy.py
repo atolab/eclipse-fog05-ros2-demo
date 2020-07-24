@@ -15,6 +15,8 @@ descs = {
     'zenoh':'zenoh.json',
     'server':'teleop-server.json',
     'gui':'gui.json',
+    'motors':'motors.json',
+    'client':'client.json'
 }
 
 net_desc = ['vnet.json']
@@ -67,10 +69,7 @@ def main(ip):
         inst_info = a.fdu.define(fdu_id)
         iid = inst_info.get_uuid()
         a.fdu.configure(iid)
-        if name == 'server':
-            a.fdu.start(iid, "ZENOH=172.16.123.20")
-        else:
-            a.fdu.start(iid)
+        a.fdu.start(iid)
         print ('iid : {}'.format(iid))
         print('Instantiated: {}'.format(name))
         fdus.update({fdu_id: iid})
