@@ -30,7 +30,7 @@
             }
         },
         {
-            "name": "wlan1",
+            "name": "wlxf4ec38e886ad",
             "is_mgmt": false,
             "if_type": "EXTERNAL",
             "virtual_interface": {
