@@ -14,6 +14,7 @@ lxc exec gui -- sh -c "cp -r /root/teleop_yaks/gui/* /var/www/localhost/htdocs/"
 lxc exec gui -- sh -c "rm -rf /root/teleop_yaks"
 
 lxc file push ./interfaces gui/etc/network/interfaces
+lxc file push ./resolv.conf gui/etc/resolv.conf
 lxc file push ./default.conf gui/etc/nginx/conf.d/default.conf
 
 lxc stop gui
