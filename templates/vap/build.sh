@@ -6,7 +6,7 @@ lxc profile copy default ap
 
 # lxc profile device remove ap eth0
 # lxc profile device add ap eth0 nic name=eth0 nictype=bridged parent=br0 hwaddr=be:ef:be:ef:00:40
-lxc profile device add ap wlan1 nic name=wlan1 nictype=physical parent=wlan1
+lxc profile device add ap wlxf4ec38e886ad nic name=wlxf4ec38e886ad nictype=physical parent=wlxf4ec38e886ad
 
 lxc launch images:alpine/edge ap -p ap
 sleep 5

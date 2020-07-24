@@ -2,14 +2,14 @@
     "id": "virtual-ap",
     "name": "virtual-access-point",
     "computation_requirements": {
-        "cpu_arch": "aarch64",
+        "cpu_arch": "x86_64",
         "cpu_min_freq": 0,
         "cpu_min_count": 1,
         "ram_size_mb": 512.0,
         "storage_size_gb": 1.0
     },
     "image": {
-        "uri": "file:///home/ubuntu/images/ap.tar.gz",
+        "uri": "file:///home/ato/images/ap.tar.gz",
         "checksum": "f01e5796cc7f7fd95eb4df9eb36ecf2d8591307d3a9ec39fa7a71f4426c033df",
         "format": "tar.gz"
     },
@@ -35,7 +35,7 @@
             "if_type": "EXTERNAL",
             "virtual_interface": {
                 "intf_type": "PHYSICAL",
-                "vpci": "wlan1",
+                "vpci": "wlxf4ec38e886ad",
                 "bandwidth": 0
             }
         }
